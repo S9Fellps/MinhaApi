@@ -10,6 +10,18 @@
 </head>
 
 <body>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url(rick.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+    
     <nav class="navbar bg-success">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -20,9 +32,10 @@
     <h1 class="text-center">Rick and Morty - Pesquisa de Personagem</h1>
     <br>
     <div class="container input-group mb-3">
-        <input id="personagem" type="text" class="form-control" placeholder="Nome do Personagem" aria-label="Nome do Personagem"
-            aria-describedby="button-addon2">
-        <button onclick="Procurar()" class="bg-success text-white btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+        <input id="personagem" type="text" class="form-control" placeholder="Nome do Personagem"
+            aria-label="Nome do Personagem" aria-describedby="button-addon2">
+        <button onclick="Procurar()" class="bg-success text-white btn btn-outline-secondary" type="button"
+            id="button-addon2">Buscar</button>
     </div>
 
     <div id="card" class="container text-center card" style="width: 18rem;">
@@ -37,7 +50,6 @@
             <li class="list-group-item"><strong>Gênero:</strong> <span id="genero">Desconhecido</span></li>
         </ul>
     </div>
-
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
